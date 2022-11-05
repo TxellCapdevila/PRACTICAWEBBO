@@ -1,0 +1,304 @@
+
+<!doctype html>
+<html dir="ltr" lang="ca">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> WEBBO</title>
+    <link rel="stylesheet" href="01-006.css">
+	<link rel="shortcut icon" href="Images/ou.png" type="image/x-icon"> <!-- icona que es visualitza a la pestanya -->
+
+  </head>
+  <body >
+	<div class="contenedor">
+
+		
+		<header class="header">
+			<!-- Menu - Header -->
+			<nav>
+				<div id="navbar">
+				  <div id="logo">
+
+					<img src="Images/Logo.png" sizes="171px" width = "171" height = "70" alt=logo  class="logo" srcset=" Images/logo.png 600w,
+						Images/logo.png 1920w,
+						Images/logo.png 3840w" >
+
+				  </div>
+				  <div id="links" style=" color:#6f5b35;">
+
+					
+					<a href="#" >INICI</a>
+
+					<a href="#Receptes">RECEPTES</a>
+	
+					<a href="#SobreNosaltres">SOBRE NOSALTRES</a>
+	
+					<a href="#Receptadeldía">RECEPTA DEL DÍA</a>
+	
+					<a href="#Contacte">CONTCATE</a>
+	
+		
+				  </div>
+		  
+				  <div class="mobile-btn">
+					<a id="menu-btn" onclick="myFunction()" class="fa fa-bars fa-2x"></a>
+				  </div>
+		  
+				</div>
+			  </nav>
+		  
+			  <!-- Mobile Menu -->
+			  <div id="mobile-menu" class="mobile-menu">
+				<ul class="mobile-links">
+				  <li class="nav-list"><a href="inici">INICI</a></li>
+				  <li class="nav-list"><a href="recptes">RECEPTES</a></li>
+				  <li class="nav-list"><a href="#sidebar">SOBRE NOSALTRES</a></li>
+				  <li class="nav-list"><a href="#Receptadeldía">RECEPTA DEL DÍA</a></li>
+				  <li class="nav-list"><a href="#contacte">CONTCATE</a></li>
+				  
+				 
+				</ul>
+			  </div>
+		
+		</header>
+
+
+		<!-- Contingut de la nostra pàgina -->
+		<main class="contenido">
+
+			<!-- Incorporem text per fer l'inici -->
+			<h1 style="margin-bottom:  20px;">INICI</h1>
+
+			<p>Cuinar és divertit, no tant difícil com pensem i el millor antiestres per desconectar de totes les feines que ens ocupen durant el nostre dia a dia. Amb les nostres receptes passareu d’odiar el moment de tindre que cuinar a desitjar que arribi el moment de fer-vos el menjar. 
+				En aquesta pàgina podreu trobar receptes variades i per diversos moments pero totes amb un ingredient comú, l’ou. Un ingredient que sempre tenim a mà i que ens permet molta varietat de menjars, al mateix temps que és molt nutritiu i saludable (Per sbaer més de les seves propietats consulta a <a href="https://www.ocu.org/alimentacion/alimentos/informe/huevos-beneficios"  style=" color:#cb9817;">aquí</a>).
+								</p>
+			<!-- Insertem slider, aquest hem agafat una plantilla d'un treball de l'any passat -->
+			<div class="slideshow-container">
+				<div class="slideshow" data-transition="fade">
+					<input type="radio" name="ss2" id="ss2-item-1" class="slideshow--bullet" checked="checked">
+					<div class="slideshow--item">
+					  <img src="https://i.pinimg.com/564x/6c/27/de/6c27de365ee8622f9ad4b36ea4f7b957.jpg" alt="NoiCuinant" />
+					  <label for="ss2-item-3" class="slideshow--nav slideshow--nav-previous">Go to slide 3</label>
+					  <label for="ss2-item-2" class="slideshow--nav slideshow--nav-next">Go to slide 2</label>
+					</div>
+				  
+					<input type="radio" name="ss2" id="ss2-item-2" class="slideshow--bullet" />
+					<div class="slideshow--item">
+					  <img src="https://i.pinimg.com/564x/7b/dc/88/7bdc88ce7534cea108e4871c237edb6a.jpg" alt="ParellaCuinant" />
+					  <label for="ss2-item-1" class="slideshow--nav slideshow--nav-previous">Go to slide 1</label>
+					  <label for="ss2-item-3" class="slideshow--nav slideshow--nav-next">Go to slide 3</label>
+					</div>
+				  
+					<input type="radio" name="ss2" id="ss2-item-3" class="slideshow--bullet" />
+					<div class="slideshow--item">
+					  <img src="https://i.pinimg.com/564x/26/d1/1d/26d11df1383d0d2310c57ac18d302830.jpg" alt="DonaCuinant" />
+					  <label for="ss2-item-2" class="slideshow--nav slideshow--nav-previous">Go to slide 2</label>
+					  <label for="ss2-item-4" class="slideshow--nav slideshow--nav-next">Go to slide 4</label>
+					</div>
+					
+					<input type="radio" name="ss2" id="ss2-item-4" class="slideshow--bullet" />
+					<div class="slideshow--item">
+					  <img src="https://i.pinimg.com/564x/07/00/08/0700081fdb9a6755358f9958abe4d921.jpg" alt="MarePastissera" />
+					  <label for="ss2-item-3" class="slideshow--nav slideshow--nav-previous">Go to slide 3</label>
+					  <label for="ss2-item-1" class="slideshow--nav slideshow--nav-next">Go to slide 1</label>
+					</div>
+				
+				  </div>
+				</div>
+
+				<!-- El segon apartat del nostre contingut és l'apartat de receptes, on hem establert un grid per a
+					 que l'estructura de les nostres imatges s'ajustin al dispositiu d'una manera coherent  -->
+
+			<section  id="Receptes" aria-label="RECEPTES">
+
+				<h1 style="margin-top: 150px;"> RECEPTES </h1>
+				
+
+				<div class="grid-container">
+					<div
+					  class="grid-item tall"
+					  style="background-image: url('https://th.bing.com/th/id/R.085efd40e42c963e491fe61e11e3b492?rik=4iPFzKx5SW9Auw&riu=http%3a%2f%2fes.cravingsjournal.com%2fwp-content%2fuploads%2f2019%2f10%2fsalsa-blanca-3-768x1152.jpg&ehk=7gOM1XYYphyMXL%2bggprv%2btOlDFvIhuV0XahQQgJopU8%3d&risl=&pid=ImgRaw&r=0')"
+					></div>
+					<div
+					  class="grid-item"
+					  style="
+						background-image: url('https://www.cucinare.tv/wp-content/uploads/2019/11/Huevos-revueltos.jpg');
+					  "
+					></div>
+			  
+					<div
+					  class="grid-item wide"
+					  style="
+						background-image: url('https://static.diariofemenino.com/media/14582/receta-bowl-pollo-espinacas.jpg');
+					  "
+					></div>
+					<div
+					  class="grid-item"
+					  style="
+						background-image: url('https://th.bing.com/th/id/R.d405a47743356398f66641e9cbc30a34?rik=Qkv8nOUknS5h4A&pid=ImgRaw&r=0');
+					  "
+					></div>
+					<div
+					  class="grid-item"
+					  style="
+						background-image: url('https://bigoven-res.cloudinary.com/image/upload/t_recipe-1280/best-ever-fudge-brownie-02ca90.jpg');
+					  "
+					></div>
+					<div
+					  class="grid-item"
+					  style="
+						background-image: url('https://i.blogs.es/7f9600/1366_2000-9-/1366_2000.jpg');
+					  "
+					></div>
+					<div
+					  class="grid-item"
+					  style="
+						background-image: url('https://th.bing.com/th/id/OIP.Q3-q7zJm-zPMDq-87ZhODgHaFA?pid=ImgDet&rs=1');
+					  "
+					></div>
+					<div
+					  class="grid-item"
+					  style="background-image: url('https://th.bing.com/th/id/OIP.y8QhO6n8am_juXhD8adydAHaE7?pid=ImgDet&rs=1')"
+					></div>
+					<div
+					  class="grid-item tall wide"
+					  style="
+						background-image: url('https://2.bp.blogspot.com/-adgXyKTOwWM/WwNq4ci8ODI/AAAAAAAAb5M/c6hw3OzeEiY3dIckqEUccCru5nsnpAmqQCLcBGAs/s1600/Huevos%2Brellenos%2Bde%2Baguacate%2By%2Bat%25C3%25BAn%2BYT.jpg');
+					  "
+					></div>
+					<div
+					  class="grid-item"
+					  style="
+						background-image: url('https://th.bing.com/th/id/OIP.LRm4aDxXNiUEEOkJzA7u9gHaE8?pid=ImgDet&rs=1');
+					  "
+					></div>
+					<div
+					  class="grid-item"
+					  style="
+						background-image: url('https://th.bing.com/th/id/OIP.a-PexbO5EWRcCcUiWW2RZAHaE8?pid=ImgDet&rs=1');
+					  "
+					></div>
+					<div
+					  class="grid-item"
+					  style="
+						background-image: url('https://th.bing.com/th/id/OIP.SSfY9BBrgbVBXxxxKsUQqAHaE8?pid=ImgDet&w=600&h=400&rs=1');
+					  "
+					></div>
+					<div
+					  class="grid-item"
+					  style="
+						background-image: url('https://i.blogs.es/58748a/huevos_berenjena/1366_2000.jpg');
+					  "
+					></div>
+					<div
+					  class="grid-item"
+					  style="
+						background-image: url('https://i0.wp.com/www.lugarnia.com/wp-content/uploads/2020/09/Tortilla-de-patatas.jpg?resize=960%2C639&ssl=1');
+					  "
+					></div>
+					<div
+					  class="grid-item"
+					  style="
+						background-image: url('https://th.bing.com/th/id/OIP.Q3-q7zJm-zPMDq-87ZhODgHaFA?pid=ImgDet&rs=1');
+					  "
+					></div>
+				  </div>
+
+			</section>
+			
+				
+				
+		</main>
+
+	<!-- A continuació hem realitzat el  nostre sidebar on expliquem qui som -->
+		<aside class="sidebar" id="Sidebar">
+			<section  id="SobreNosaltres" aria-label="SOBRE NOSALTRE">
+			<h1>SOBRE NOSALTRES</h1>
+			<div> <img src="Images/Abri&Txell.jpg" alt="FotoCreadoresPàgina" class="img-responsive">
+			</div>
+			<p style="text-align: justify;">
+				Nosaltres som la Txell i l’Abril i som estudiants universitàries. Al llarg de la nostra carrera universitaria ens hem adonat de que el cuinar pot ser una bona medicina per desconectar per un ratet del món universitari estressant. És per això que hem creat aquesta pàgina amb tot de receptes que hem recopilat al llarg d’aquest temps i que volem compartir amb vosaltres. Igual que si vosaltres voleu compartir alguna amb nosaltres, estarem encantades.</p>
+			</section>
+		</aside>
+	
+
+	<!-- Hem realitzat una apartat widget, on en aquest públiquem una recepta diaria -->
+
+		<div class="widget-1">
+			<section  id="Receptadeldía" aria-label="RECEPTA DEL DÍA">
+			<h1> 	
+				<i class="fa-sharp fa-solid fa-calendar-days" style="margin-right:7px"></i>
+
+				
+				
+			 
+				RECEPTA DEL DÍA
+				
+			</h1><br><br/><br><br/>
+			
+			
+			
+			<h2>AMANIDA AMB OUS MOLLET</h2>
+			<P>
+				<br><br/>
+				<b>INGREDIENTS (4 pers.): </b><br><br/>
+				- 4 ous<br><br/>
+				- Enciams variats, canonges o ruca<br><br/>
+				- Ravenets<br><br/>
+				- 1 tomàquet<br><br/>
+				- 1 ceba morada<br><br/>
+				- Oli d'oliva verge extra<br><br/>
+				- Vinagre o suc de llimona<br><br/>
+				- Sal<br><br/>
+				- Pebre<br><br/>
+
+				<b>1.</b> Rentar i trossejar l'enciam. Pelar la ceba i tallar-la en anells fins. Rentar el tomàquet i tallar-lo en trossos. Rentar els ravenets i tallar-los en rodanxes fines.
+				<br><br/><b>2.</b> Posar una olla al foc amb aigua. Quan comença a bullir, afegir els ous, que han d'estar a temperatura ambient. Coure 5 minuts i retirar. Ficar-los en aigua freda per a parar la cocció. Els ous mollet tenen la clara quallada i la gemma crua, si bullen més de 5 minuts quedaran durs. Pelar i reservar.
+				<br><br/><b>3.</b> Muntar l'amanida en un bol. Posar de base l'enciam i, a continuació, el tomàquet, la ceba i els ravenets. Afegir els ous. Amanir amb oli, llimona, sal i pebre.
+				</P>
+
+
+
+				<div> <img src="Images/amanida1.JPG" alt="ReceptaDiaria" class="img-responsive" style="justify-content: center;">
+				</div>
+
+			</section>
+			</div>
+
+
+
+		
+	
+
+	
+	<!--Finalment insertem un peu de pàgina.-->
+	<footer class="footer" >
+		<section  id="Contacte" aria-label="CONTACTE">
+		
+       <p>
+		
+		 <br><br><br><br><i class="fa-sharp fa-solid fa-envelope"></i>   Per més informació contacteu per correu:<br><br>
+        Abril Ferré - abrilfevi@gmail.com<br><br>
+        Txell Capdevila - txellcapdevila3@gmail.com <br><br><br><br>
+       </p>
+
+	   
+	   <i class="fa-brands fa-instagram"></i>
+	   <i class="fa-brands fa-twitter"></i>
+	   <i class="fa-brands fa-facebook"></i>
+	   <i class="fa-brands fa-pinterest-p"></i>
+	   <br><br>
+       <p style= font-size:10px;color:white> <i>&copy; 2022 por Abril Ferré i Txell Capdevila</i><br><br></p>
+	</section>
+	</footer>
+	
+	<!-- El següent codi ens ajuda a poder insertar icones -->
+	<!-- A més a més hem insertat un document JavaScrpt per poder colocar un botò que sempr torni al menú principal -->
+	<a href="#up" class="simplescrollup__button simplescrollup__button--hide"> <i class="fa-sharp fa-solid fa-circle-arrow-up"></i> </a>
+	<script src="simplescrollup.js"></script>
+	<script src="https://kit.fontawesome.com/3c0686821b.js" crossorigin="anonymous"></script>
+
+</div>
+
+  </body>
+</html>
